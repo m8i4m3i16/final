@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Stars from '@/components/product/star/star'
 
 export default function List() {
   // Toggle the side navigation
@@ -31,7 +32,7 @@ export default function List() {
     <>
       <div className="row mt-2 mb-3">
         <h5 className="card-text d-flex justify-content-between align-items-center">
-          <span className="ps-3">Nike Air Force 1 (91)</span>
+          <span className="ps-3">當前的分類名稱</span>
           <div className="d-flex p-2 justify-content-end align-items-center">
             <div className="toolbar">
               <button className="btn" id="sidebarToggle">
@@ -45,12 +46,12 @@ export default function List() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                排序依據
+                商品排序
               </button>
               <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="#">
-                    最新
+                    最新上架商品
                   </a>
                 </li>
                 <li>
@@ -68,7 +69,8 @@ export default function List() {
           </div>
         </h5>
       </div>
-      <div className="row">
+
+      <div className="row text-center">
         <div className="col-sm-12">
           <div className="d-flex" id="wrapper">
             <div className="bg-white me-3" id="sidebar-wrapper">
@@ -76,12 +78,7 @@ export default function List() {
                 <div className="cats">
                   <div>
                     <button type="button" className="btn">
-                      運動生活
-                    </button>
-                  </div>
-                  <div>
-                    <button type="button" className="btn">
-                      當季新品
+                      所有商品
                     </button>
                   </div>
                   <div>
@@ -89,179 +86,193 @@ export default function List() {
                       促銷
                     </button>
                   </div>
-                </div>
 
-                <div
-                  className="accordion accordion-flush"
-                  id="accordionFlushExample"
-                >
-                  <div className="accordion-item">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        aria-expanded="false"
-                        data-bs-target="#panelsStayOpen-collapseOne"
-                        aria-controls="panelsStayOpen-collapseOne"
+                  <div
+                    className="accordion accordion-flush"
+                    id="accordionFlushExample"
+                  >
+                    <div className="accordion-item">
+                      <h2 className="accordion-header">
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          aria-expanded="false"
+                          data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-controls="panelsStayOpen-collapseOne"
+                        >
+                          性別
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseOne"
+                        className="accordion-collapse collapse"
                       >
-                        性別
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseOne"
-                      className="accordion-collapse collapse"
-                    >
-                      <div className="accordion-body px-1">
-                        <div className="form-check">
-                          <input
-                            className="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckDefault"
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="flexCheckDefault"
-                          >
-                            男性
-                          </label>
-                        </div>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckChecked"
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="flexCheckChecked"
-                          >
-                            女性
-                          </label>
-                        </div>
-                        <div className="form-check">
-                          <input
-                            className="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="flexCheckChecked"
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="flexCheckChecked"
-                          >
-                            中性
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo"
-                      >
-                        顏色
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseTwo"
-                      className="accordion-collapse collapse"
-                    >
-                      <div className="accordion-body px-1">
-                        <div className="d-flex flex-row justify-content-around mb-2">
-                          <div className="p-2">
-                            <div className="d-flex flex-column">
-                              <div>
-                                <button
-                                  type="button"
-                                  className="btn btn-primary btn-circle"
-                                ></button>
-                              </div>
-                              <div className="color-f">紫色</div>
-                            </div>
+                        <div className="accordion-body px-1">
+                          <div className="form-check">
+                            <input
+                              className="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                            <label
+                              className="form-check-label"
+                              htmlFor="flexCheckDefault"
+                            >
+                              男性
+                            </label>
                           </div>
-                          <div className="p-2">
-                            <div className="d-flex flex-column">
-                              <div>
-                                <button
-                                  type="button"
-                                  className="btn btn-primary btn-circle"
-                                ></button>
-                              </div>
-                              <div className="color-f">紫色</div>
-                            </div>
+                          <div className="form-check">
+                            <input
+                              className="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckChecked"
+                            />
+                            <label
+                              className="form-check-label"
+                              htmlFor="flexCheckChecked"
+                            >
+                              女性
+                            </label>
                           </div>
-                          <div className="p-2">
-                            <div className="d-flex flex-column">
-                              <div>
-                                <button
-                                  type="button"
-                                  className="btn btn-primary btn-circle"
-                                ></button>
-                              </div>
-                              <div className="color-f">紫色</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="d-flex flex-row justify-content-around mb-2">
-                          <div className="p-2">
-                            <div className="d-flex flex-column">
-                              <div>
-                                <button
-                                  type="button"
-                                  className="btn btn-primary btn-circle"
-                                ></button>
-                              </div>
-                              <div className="color-f">紫色</div>
-                            </div>
-                          </div>
-                          <div className="p-2">
-                            <div className="d-flex flex-column">
-                              <div>
-                                <button
-                                  type="button"
-                                  className="btn btn-primary btn-circle"
-                                ></button>
-                              </div>
-                              <div className="color-f">紫色</div>
-                            </div>
-                          </div>
-                          <div className="p-2">
-                            <div className="d-flex flex-column">
-                              <div>
-                                <button
-                                  type="button"
-                                  className="btn btn-primary btn-circle"
-                                ></button>
-                              </div>
-                              <div className="color-f">紫色</div>
-                            </div>
+                          <div className="form-check">
+                            <input
+                              className="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckChecked"
+                            />
+                            <label
+                              className="form-check-label"
+                              htmlFor="flexCheckChecked"
+                            >
+                              中性
+                            </label>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree"
+                    <div className="accordion-item">
+                      <h2 className="accordion-header">
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                          顏色
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseTwo"
+                        className="accordion-collapse collapse"
                       >
-                        價格範圍
-                      </button>
-                    </h2>
+                        <div className="accordion-body px-1">
+                          <div className="d-flex flex-row justify-content-around mb-2">
+                            <div className="p-2">
+                              <div className="d-flex flex-column">
+                                <div>
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary btn-circle"
+                                  ></button>
+                                </div>
+                                <div className="color-f">紫色</div>
+                              </div>
+                            </div>
+                            <div className="p-2">
+                              <div className="d-flex flex-column">
+                                <div>
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary btn-circle"
+                                  ></button>
+                                </div>
+                                <div className="color-f">紫色</div>
+                              </div>
+                            </div>
+                            <div className="p-2">
+                              <div className="d-flex flex-column">
+                                <div>
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary btn-circle"
+                                  ></button>
+                                </div>
+                                <div className="color-f">紫色</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="d-flex flex-row justify-content-around mb-2">
+                            <div className="p-2">
+                              <div className="d-flex flex-column">
+                                <div>
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary btn-circle"
+                                  ></button>
+                                </div>
+                                <div className="color-f">紫色</div>
+                              </div>
+                            </div>
+                            <div className="p-2">
+                              <div className="d-flex flex-column">
+                                <div>
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary btn-circle"
+                                  ></button>
+                                </div>
+                                <div className="color-f">紫色</div>
+                              </div>
+                            </div>
+                            <div className="p-2">
+                              <div className="d-flex flex-column">
+                                <div>
+                                  <button
+                                    type="button"
+                                    className="btn btn-primary btn-circle"
+                                  ></button>
+                                </div>
+                                <div className="color-f">紫色</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="accordion-item">
+                      <h2 className="accordion-header">
+                        <button
+                          className="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree"
+                        >
+                          價格範圍
+                        </button>
+                      </h2>
+                      {/* 價格 */}
+                      <div className="input-group mb-2">
+                        <span className="input-group-text">價格</span>
+                        <input
+                          type="range"
+                          className="form-control form-range h-auto px-2"
+                          step="100"
+                          min="1500"
+                          max="10000"
+                        />
+                        <output className="form-control flex-basis-80px"></output>
+                      </div>
+                    </div>
                     <div
                       id="panelsStayOpen-collapseThree"
                       className="accordion-collapse collapse"
@@ -315,80 +326,326 @@ export default function List() {
                 </div>
               </div>
             </div>
-
+            {/* 卡片 */}
             <div id="page-content-wrapper">
               <div className="container-fluid">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                   <div className="col">
-                    <div className="card w-350 no-border f-16">
+                    <div className="card w-350 border-radius f-16">
                       <img
-                        src="/images/product/list/p1-thumb.webp"
+                        src="/images/product/list/1-1.webp"
                         className="card-img-top"
                         alt="..."
                       />
                       <div className="card-body no-space-x">
-                        <p className="card-text note-text">新品上市</p>
-                        <p className="card-text">Nike Air Force 1 Shadow</p>
-                        <p className="card-text type-text">女鞋</p>
-                        <p className="card-text type-text mb-2">3 種顏色</p>
-                        <span className="h-currency bold h-now">$1,990</span>
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
+
                   <div className="col">
-                    <div className="card w-350 no-border f-16">
+                    <div className="card w-350 border-radius f-16">
                       <img
-                        src="/images/product/list/p1-thumb.webp"
+                        src="/images/product/list/1-1.webp"
                         className="card-img-top"
                         alt="..."
                       />
                       <div className="card-body no-space-x">
-                        <p className="card-text note-text">新品上市</p>
-                        <p className="card-text">Nike Air Force 1 Shadow</p>
-                        <p className="card-text type-text">女鞋</p>
-                        <p className="card-text type-text mb-2">3 種顏色</p>
-                        <span className="h-currency bold h-now">$1,990</span>
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
+
                   <div className="col">
-                    <div className="card w-350 no-border f-16">
+                    <div className="card w-350 border-radius f-16">
                       <img
-                        src="/images/product/list/p1-thumb.webp"
+                        src="/images/product/list/1-1.webp"
                         className="card-img-top"
                         alt="..."
                       />
                       <div className="card-body no-space-x">
-                        <p className="card-text note-text">新品上市</p>
-                        <p className="card-text">Nike Air Force 1 Shadow</p>
-                        <p className="card-text type-text">女鞋</p>
-                        <p className="card-text type-text mb-2">3 種顏色</p>
-                        <span className="h-currency bold h-now">$1,990</span>
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
+
                   <div className="col">
-                    <div className="card w-350 no-border f-16">
+                    <div className="card w-350 border-radius f-16">
                       <img
-                        src="/images/product/list/p1-thumb.webp"
+                        src="/images/product/list/1-1.webp"
                         className="card-img-top"
                         alt="..."
                       />
                       <div className="card-body no-space-x">
-                        <p className="card-text note-text">新品上市</p>
-                        <p className="card-text">Nike Air Force 1 Shadow</p>
-                        <p className="card-text type-text">女鞋</p>
-                        <p className="card-text type-text mb-2">3 種顏色</p>
-                        <span className="h-currency bold h-now">$1,990</span>
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
+
+                  <div className="col">
+                    <div className="card w-350 border-radius f-16">
+                      <img
+                        src="/images/product/list/1-1.webp"
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body no-space-x">
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col">
+                    <div className="card w-350 border-radius f-16">
+                      <img
+                        src="/images/product/list/1-1.webp"
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body no-space-x">
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col">
+                    <div className="card w-350 border-radius f-16">
+                      <img
+                        src="/images/product/list/1-1.webp"
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body no-space-x">
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col">
+                    <div className="card w-350 border-radius f-16">
+                      <img
+                        src="/images/product/list/1-1.webp"
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body no-space-x">
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col">
+                    <div className="card w-350 border-radius f-16">
+                      <img
+                        src="/images/product/list/1-1.webp"
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body no-space-x">
+                        <Stars />
+                        {/* <p className="card-text text-primary">新品上市</p> */}
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          NT$24,000
+                        </span>
+                        <br />
+                        <p className="h-currency  bold h-now text-decoration-line-through">
+                          NT$28,000
+                        </p>
+                        <div className="bi-icon">
+                          {/* <i class="bi bi-suit-heart"></i> */}
+                          <i class="bi bi-person-heart"></i>
+                          {/* <i class="bi bi-bookmark-heart"></i> */}
+                          {/* <i class="bi bi-cart4"></i> */}
+                          <i class="bi bi-cart-plus-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* 9結束 */}
+                  {/* 分頁 */}
+                  <nav aria-label="Page navigation example mx-auto">
+                    <ul className="pagination">
+                      <li className="page-item">
+                        <a className="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          1
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          2
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#">
+                          3
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a className="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .bi-icon {
+          font-size: 20px;
+        }
+        .navigation {
+          display: flex;
+          justify-content: flex-end;
+        }
+      `}</style>
     </>
   )
 }
