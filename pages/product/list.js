@@ -341,20 +341,20 @@ export default function List() {
                         <Stars />
                         {/* <p className="card-text text-primary">新品上市</p> */}
                         <p className="card-text">Helei Wahoo</p>
-                        <p className="card-text type-text">男士防寒衣</p>
+                        <p className="card-text type-text h-now">男士防寒衣</p>
                         <span className="h-currency bold note-text">
                           NT$24,000
                         </span>
                         <br />
-                        <p className="h-currency  bold h-now text-decoration-line-through">
+                        <p className="h-currency bold  text-decoration-line-through type-text">
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -380,11 +380,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -410,11 +410,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -440,11 +440,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -470,11 +470,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -500,11 +500,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -530,11 +530,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -560,11 +560,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>
@@ -590,11 +590,11 @@ export default function List() {
                           NT$28,000
                         </p>
                         <div className="bi-icon">
-                          {/* <i class="bi bi-suit-heart"></i> */}
-                          <i class="bi bi-person-heart"></i>
-                          {/* <i class="bi bi-bookmark-heart"></i> */}
-                          {/* <i class="bi bi-cart4"></i> */}
-                          <i class="bi bi-cart-plus-fill"></i>
+                          {/* <i className="bi bi-suit-heart"></i> */}
+                          <i className="bi bi-person-heart"></i>
+                          {/* <i className="bi bi-bookmark-heart"></i> */}
+                          {/* <i className="bi bi-cart4"></i> */}
+                          <i className="bi bi-cart-plus-fill"></i>
                         </div>
                       </div>
                     </div>

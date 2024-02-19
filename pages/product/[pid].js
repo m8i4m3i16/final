@@ -24,7 +24,7 @@ export default function Detail() {
           <h6>4.0分 | 8則評價</h6>
 
           <h6 className="note-text">NT$24,000</h6>
-          <p className="text-decoration-line-through">NT$28,000</p>
+          <p className="text-decoration-line-through type-text">NT$28,000</p>
           <p className="product-desc">
             穿上 Nike Air Force 1 PLT.AF.ORM. 用經典好穿的 AF1 風格脫穎而出。
             優雅版型搭配加厚中底，為籃球鞋系列注入傲嬌新風貌。
@@ -105,11 +105,11 @@ export default function Detail() {
             className="btn btn-secondary w-100 mb-3 my-3"
             style={{ fontWeight: 'bold', color: 'white' }}
           >
-            加入購物車 <i class="bi bi-cart4"></i>
+            加入購物車 <i className="bi bi-cart-plus-fill"></i>
           </button>
           {/* 加入最愛 */}
           <button className="btn btn-outline-primary w-100">
-            <i class="bi bi-suit-heart"></i> 加入最愛
+            <i className="bi bi-person-heart"></i> 加入最愛
           </button>
 
           {/* 注意事項 */}
@@ -176,62 +176,13 @@ export default function Detail() {
                   </div>
                 </div>
               </div>
-
-              {/* <div className="accordion-item">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    評價(370){'  '}
-                    <span className="star">&#9733;</span>
-                    <span className="star">&#9733;</span>
-                    <span className="star">&#9733;</span>
-                    <span className="star">&#9733;</span>
-                    <span className="star">&#9733;</span>
-                  </button>
-                </h2>
-
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  className="accordion-collapse collapse"
-                >
-                  <div className="accordion-body px-1">
-                    <div className="commet">
-                      <div className="rating">
-                        <span className="star">&#9733;</span>
-                        <span className="star">&#9733;</span>
-                        <span className="star">&#9733;</span>
-                        <span className="star">&#9733;</span>
-                        <span className="star">&#9733;</span>
-                      </div>
-                      <p>great shoes overall Ella579458843 - 2023年6月19日</p>
-                      <p>
-                        overall one of my favorite shoes at the moment. go with
-                        any of my outfits, i can wear sweatpants with them or to
-                        a nice dinner with a dress. the only “problem” i have
-                        with them is that they’re difficult to break into even
-                        if you half size up, it took me a while to break into
-                        them. but overall i recommend these shoes if you just
-                        want some great shoes for any occasion.... 更多
-                      </p>
-                    </div>
-                  </div>
-                </div> */}
-              {/* </div> */}
             </div>
           </div>
         </div>
       </div>
-
       <br />
       <br />
       <hr />
-
       {/* 轉換按鈕 -- 商品介紹/評價 */}
       <div className="form-check form-switch d-flex justify-content-end">
         <input
@@ -249,7 +200,7 @@ export default function Detail() {
         <div>
           {/* 顯示顧客評價 */}
           <h3 className="text-center my-2">顧客評價</h3>
-          <div class="container">
+          <div className="container">
             <form>
               <div className="form-group">
                 <label className="mx-2" for="exampleFormControlTextarea1">
@@ -260,7 +211,7 @@ export default function Detail() {
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
-                  placeholder="請撰寫您的評價"
+                  placeholder="請撰寫評價"
                 ></textarea>
               </div>
               <button
@@ -272,13 +223,54 @@ export default function Detail() {
             </form>
           </div>
           {/* 用戶評價 */}
-          <div className="circle-container">
-            <div>
-              <img src="user.jpg" alt="User Photo" class="circle-image" />
+          <div className="circle-container mt-5">
+            <div className="mt-1">
+              <h6>安妮雅</h6>
+              <Stars />
+              <p>
+                若沒有潛水的存在，那麼後果可想而知。亦舒曾經說過，人生短短數十載，最要緊的是滿足自己，不是討好他人。這影響了我的價值觀。
+              </p>
+            </div>
+          </div>
+
+          <hr />
+          <button type="submit" className="btn btn-primary  d-flex btn-comment">
+            更多評價
+          </button>
+          {/* 隨機商品 */}
+          <div>
+            <h3 className="text-center my-5">你可能會喜歡的商品⋯</h3>
+            <div id="page-content-wrapper">
+              <div className="container-fluid">
+                <div className="row row-cols-1 row-cols-md-3 g-4">
+                  <div className="col">
+                    <div className="card w-350 border-radius f-16">
+                      <img
+                        src="/images/product/list/1-1.webp"
+                        className="card-img-top"
+                        alt="..."
+                      />
+                      <div className="card-body no-space-x">
+                        <p className="card-text">Helei Wahoo</p>
+                        <p className="card-text type-text h-now">男士防寒衣</p>
+                        <span className="h-currency bold note-text">
+                          {' '}
+                          NT$24,000{' '}
+                        </span>
+                        <br />
+                        <p className="h-currency bold  text-decoration-line-through type-text">
+                          NT$28,000
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       )}
+
       {!isSwitchOn && (
         <div>
           {/* 顯示商品細節 */}
@@ -305,7 +297,6 @@ export default function Detail() {
           </div>
         </div>
       )}
-
       <style jsx>{`
         .btn-md:hover,
         .btn-outline-primary:hover,
@@ -333,23 +324,107 @@ export default function Detail() {
           background-color: #f5f5f5;
           font-size: 16px;
         }
+
         .circle-container {
-          width: 50px;
-          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        {/* 推薦商品 */}
+        .container-with-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        .btn-arrow-circle {
+          margin: 0 20px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
-          overflow: hidden;
-          position: relative;
           background-color: #f5f5f5;
+          font-size: 16px;
         }
-        .circle-image {
-          width: 100%;
-          height: auto;
-          display: block;
+        .btn-left {
+          margin-right: 10px;
+        }
+        .card-container {
+          display: flex;
+          justify-content: space-between;
+        }
+        .wrap-card {
+          position: relative;
+        }
+
+        .tag {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          top: 20;
+          left: 20;
+          background-color: var(--red, #dc5151);
+          color: white; 
+          padding: 5px 10px; 
+          border-radius: 5px; 
         }
+        {/* .wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 15px;
+        }
+        
+        .tag {
+          font-feature-settings: 'clig' off, 'liga' off;
+          font-family: Inter, sans-serif;
+          justify-content: center;
+          border-radius: 4px;
+          background-color: #cf4242;
+          aspect-ratio: 3.09;
+          color: #fff;
+          letter-spacing: 0.8px;
+          padding: 2px 10px;
+        } */}
+        .img {
+          aspect-ratio: 1;
+          object-fit: auto;
+          object-position: center;
+          width: 30px;
+          box-shadow: 2px 4px 6.1px 0px rgba(20, 35, 56, 0.4);
+        }
+        .card-bottom {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          padding: 12px;
+        }
+        .card-title {
+          color: var(--neutral-07100, #141718);
+          text-align: center;
+          font-feature-settings: 'clig' off, 'liga' off;
+          letter-spacing: 0.8px;
+          font: 500 16px Inter, sans-serif;
+        }
+        .discount-price-wrap {
+          justify-content: center;
+          align-self: center;
+          display: flex;
+          margin-top: 12px;
+          gap: 12px;
+          white-space: nowrap;
+        }
+        .discount-price {
+          color: var(--red, #dc5151);
+          font-feature-settings: 'clig' off, 'liga' off;
+          flex-grow: 1;
+          font: 500 16px Inter, sans-serif;
+        }
+        .o-price {
+          justify-content: center;
+          color: var(--gray, #858585);
+          margin: auto 0;
+          padding: 2px 8px 2px 3px;
+          font: 400 14px Arial, sans-serif;
+        }
+        {/* 你可能會喜歡的商品 */}
+       
       `}</style>
     </>
   )

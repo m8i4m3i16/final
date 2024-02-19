@@ -80,11 +80,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .note-text {
-  color: rgb(158, 53, 0);
+  color: var(--red, #dc5151);
 }
 
 .type-text {
-  color: rgb(117, 117, 117);
+  color: var(--gray, #858585);
   font-weight: normal;
 }
 
@@ -149,7 +149,7 @@ div.scroll {
 .h-now {
   font-size: 16px;
   color: rgb(17, 17, 17);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .f-12 {
